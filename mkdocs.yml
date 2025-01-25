@@ -1,0 +1,6 @@
+site_name: Ausa Design Docs
+site_url: https://alton1998.github.io/ausa.github.io/
+
+nav: 
+  - Home: index.md
+  - Design Proposal: design-proposal.md
