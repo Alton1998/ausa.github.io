@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Design Proposal
 
 ## Product Goal
@@ -99,3 +102,7 @@ The medical device is at the heart of the product, designed to monitor and colle
 ##### 10. Patient Engagement and Feedback
 - Health Trends and Insights: The device should allow patients to track trends in their health data over time, such as fluctuations in blood pressure or heart rate, to encourage self-awareness and proactive health management.
 - Health Insights via Mobile App: Through the mobile app, patients can view insights on their vitals, receive personalized tips, and track their health progress, fostering better health habits and motivating them to stay engaged with their healthcare routine.
+
+## Architecture
+
+### Device
