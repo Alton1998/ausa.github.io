@@ -135,6 +135,26 @@ This is to ensure that the device is can use the services Ausa provides.
 
 This service is responsible of syncing data to the cloud in real time or at intervals if needed.
 #### DataFlow
+##### 1. Updating Data to cloud
 
+This will be done by the Data Sync Service. So the DataFlow is as follows:
+
+1. Say A user enters a data, or a sensor is recieving data.
+2. This data is sent to Redis Streams which serves as a message broker 
+3. The Data Sync Service is notfied of this and consumes this data, which later on sent to Azure Cloud through Azure IoT hub. Within Azure IoT Hub we have Azure Events Hub where all device related data flows through. The relevant services listens for these data push events.
+4. The respective listeners or subscribers, in this case we have Azure Functions and MedTech Service. Azure Functions, is responsible for populating data to our own internal Database Which is Azure Cosmos DB.
+
+**Note: FHIR is used to fetch data within our system, but here's something to consider, FHIR payload works for all scenarios and maybe massive, may be for our own internal apps we can fetch the data from Azure CosmoDB**
+
+Refer: https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview
+
+Here is a diagram:
+
+![Device To Cloud DataFlow](./diagrams/Device_TO_CLOUD_DATA_FLOW.png)
+
+
+##### Device Registration and Provisioning Process
+
+This section deals with 
 
 
