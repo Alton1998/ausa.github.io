@@ -582,6 +582,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DataFlow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-updating-data-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Updating Data to cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-registration-and-provisioning-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Registration and Provisioning Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -952,6 +976,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DataFlow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-updating-data-to-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Updating Data to cloud
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-registration-and-provisioning-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Registration and Provisioning Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1115,6 +1163,18 @@
 <h5 id="7-data-sync-service">7. Data Sync Service</h5>
 <p>This service is responsible of syncing data to the cloud in real time or at intervals if needed.</p>
 <h4 id="dataflow">DataFlow</h4>
+<h5 id="1-updating-data-to-cloud">1. Updating Data to cloud</h5>
+<p>This will be done by the Data Sync Service. So the DataFlow is as follows:</p>
+<ol>
+<li>Say A user enters a data, or a sensor is recieving data.</li>
+<li>This data is sent to Redis Streams which serves as a message broker </li>
+<li>The Data Sync Service is notfied of this and consumes this data, which later on sent to Azure Cloud through Azure IoT hub. </li>
+</ol>
+<p>Refer: https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview</p>
+<p>Here is a diagram:</p>
+<p><img alt="Device To Cloud DataFlow" src="../diagrams/Device_TO_CLOUD_DATA_FLOW.png" /></p>
+<h5 id="device-registration-and-provisioning-process">Device Registration and Provisioning Process</h5>
+<p>This section deals with </p>
 
 
 
