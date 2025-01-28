@@ -4,3 +4,9 @@ site_url: https://alton1998.github.io/ausa.github.io/
 nav: 
   - Home: index.md
   - Design Proposal: design-proposal.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.indexes
