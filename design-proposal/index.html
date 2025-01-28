@@ -1168,8 +1168,10 @@
 <ol>
 <li>Say A user enters a data, or a sensor is recieving data.</li>
 <li>This data is sent to Redis Streams which serves as a message broker </li>
-<li>The Data Sync Service is notfied of this and consumes this data, which later on sent to Azure Cloud through Azure IoT hub. </li>
+<li>The Data Sync Service is notfied of this and consumes this data, which later on sent to Azure Cloud through Azure IoT hub. Within Azure IoT Hub we have Azure Events Hub where all device related data flows through. The relevant services listens for these data push events.</li>
+<li>The respective listeners or subscribers, in this case we have Azure Functions and MedTech Service. Azure Functions, is responsible for populating data to our own internal Database Which is Azure Cosmos DB.</li>
 </ol>
+<p><strong>Note: FHIR is used to fetch data within our system, but here's something to consider, FHIR payload works for all scenarios and maybe massive, may be for our own internal apps we can fetch the data from Azure CosmoDB</strong></p>
 <p>Refer: https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview</p>
 <p>Here is a diagram:</p>
 <p><img alt="Device To Cloud DataFlow" src="../diagrams/Device_TO_CLOUD_DATA_FLOW.png" /></p>
