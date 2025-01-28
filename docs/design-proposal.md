@@ -106,3 +106,5 @@ The medical device is at the heart of the product, designed to monitor and colle
 ## Architecture
 
 ### Device
+
+![Device Architecture](../diagrams/Device%20Architecture.png)
