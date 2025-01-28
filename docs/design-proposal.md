@@ -107,4 +107,34 @@ The medical device is at the heart of the product, designed to monitor and colle
 
 ### Device
 
-![Device Architecture](../diagrams/Device%20Architecture.png)
+![Device Architecture](./diagrams/Device%20Architecture.png)
+
+#### Services
+
+##### 1. Redis Service
+
+This Service acts as a message broker between services which enables the device to act asynchronously and enable multiprocessing, without creating any bottlenecks.
+
+##### 2. Sqlite
+
+This is the local datastore. This is used to store readings, schedules and other things that needs to be synced to cloud later or just needs to be stored.
+
+##### 3. Schedule Service
+
+This is multi-thread based service where in we manage manage patient routines or reminders if necessary. This is a service where in we schedule threads to send out alerts if necessary. 
+
+##### 4. Device Health Check Service
+This service is needed to ensure all the services and components are working.
+##### 5. Alert Service
+This is a one stop service where we can either connect the patient to emergency services or to the patient provider if needed.
+
+##### 6. Authentication Service
+This is to ensure that the device is can use the services Ausa provides.
+
+##### 7. Data Sync Service
+
+This service is responsible of syncing data to the cloud in real time or at intervals if needed.
+#### DataFlow
+
+
+
