@@ -494,6 +494,99 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Device">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-redis-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Redis Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sqlite" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sqlite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-schedule-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Schedule Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-device-health-check-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Device Health Check Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-alert-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Alert Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-authentication-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Authentication Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-data-sync-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Data Sync Service
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      DataFlow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -771,6 +864,99 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Device">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-redis-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Redis Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sqlite" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Sqlite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-schedule-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Schedule Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-device-health-check-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Device Health Check Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-alert-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Alert Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-authentication-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Authentication Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-data-sync-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Data Sync Service
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dataflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      DataFlow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -913,6 +1099,22 @@
 <h2 id="architecture">Architecture</h2>
 <h3 id="device">Device</h3>
 <p><img alt="Device Architecture" src="../diagrams/Device%20Architecture.png" /></p>
+<h4 id="services">Services</h4>
+<h5 id="1-redis-service">1. Redis Service</h5>
+<p>This Service acts as a message broker between services which enables the device to act asynchronously and enable multiprocessing, without creating any bottlenecks.</p>
+<h5 id="2-sqlite">2. Sqlite</h5>
+<p>This is the local datastore. This is used to store readings, schedules and other things that needs to be synced to cloud later or just needs to be stored.</p>
+<h5 id="3-schedule-service">3. Schedule Service</h5>
+<p>This is multi-thread based service where in we manage manage patient routines or reminders if necessary. This is a service where in we schedule threads to send out alerts if necessary. </p>
+<h5 id="4-device-health-check-service">4. Device Health Check Service</h5>
+<p>This service is needed to ensure all the services and components are working.</p>
+<h5 id="5-alert-service">5. Alert Service</h5>
+<p>This is a one stop service where we can either connect the patient to emergency services or to the patient provider if needed.</p>
+<h5 id="6-authentication-service">6. Authentication Service</h5>
+<p>This is to ensure that the device is can use the services Ausa provides.</p>
+<h5 id="7-data-sync-service">7. Data Sync Service</h5>
+<p>This service is responsible of syncing data to the cloud in real time or at intervals if needed.</p>
+<h4 id="dataflow">DataFlow</h4>
 
 
 
