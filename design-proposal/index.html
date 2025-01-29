@@ -1194,7 +1194,8 @@
 <p><strong>Note: FHIR is used to fetch data within our system, but here's something to consider, FHIR payload works for all scenarios and maybe massive, may be for our own internal apps we can fetch the data from Azure CosmoDB</strong></p>
 <p>Refer: https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview</p>
 <p>Here is a diagram:</p>
-<p><img alt="Device To Cloud DataFlow" src="../diagrams/Device_TO_CLOUD_DATA_FLOW.png" /></p>
+<p><img alt="Device To Cloud DataFlow" src="../diagrams/Device_TO_CLOUD_DATA_FLOW.png" />
+<img alt="Device To Cloud Dataflow Sequence" src="../diagrams/Data%20Sequence%20of%20Device%20To%20Cloud.png" /></p>
 <h5 id="device-registration-and-provisioning-process">Device Registration and Provisioning Process</h5>
 <p>Essentially we will leverage Azure DPS to do this. </p>
 <p><img alt="Device Provisioning Service" src="../diagrams/Device%20Provisioning%20Service.png" /></p>
@@ -1203,7 +1204,9 @@
 https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-x509?view=iotedge-1.5&amp;tabs=individual-enrollment%2Cubuntu
 </code></pre>
 <p>The device registration process is as follows for ausa: 
-<img alt="img" src="../diagrams/mermaid-diagram-2025-01-28-221626.png" /></p>
+<img alt="Device Registration Flow" src="../diagrams/mermaid-diagram-2025-01-28-221626.png" />
+The Architecture is as follows:
+<img alt="Device Registration Architecture" src="../diagrams/Azure%20Device%20Registration.png" /></p>
 
 
 
