@@ -158,6 +158,8 @@ Here is a diagram:
 
 ##### Device Registration and Provisioning Process
 
-This section deals with 
+Refer: https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-x509?view=iotedge-1.5&tabs=azure-portal%2Cubuntu#prerequisites
+
+
 
 
