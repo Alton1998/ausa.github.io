@@ -158,7 +158,11 @@ Here is a diagram:
 
 ##### Device Registration and Provisioning Process
 
+Essentially we will leverage Azure DPS to do this.
+
 Refer: https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-x509?view=iotedge-1.5&tabs=azure-portal%2Cubuntu#prerequisites
+       https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-x509?view=iotedge-1.5&tabs=individual-enrollment%2Cubuntu
+
 
 
 
