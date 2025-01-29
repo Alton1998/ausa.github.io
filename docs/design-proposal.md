@@ -134,6 +134,9 @@ This is to ensure that the device is can use the services Ausa provides.
 ##### 7. Data Sync Service
 
 This service is responsible of syncing data to the cloud in real time or at intervals if needed.
+#### Ausa Cloud Schema
+
+![Ausa Cloud Schema](./diagrams/Ausa%20Cloud%20Schema.png)
 #### DataFlow
 ##### 1. Updating Data to cloud
 
