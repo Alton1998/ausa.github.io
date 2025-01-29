@@ -156,6 +156,7 @@ Here is a diagram:
 ![Device To Cloud DataFlow](./diagrams/Device_TO_CLOUD_DATA_FLOW.png)
 ![Device To Cloud Dataflow Sequence](./diagrams/Data%20Sequence%20of%20Device%20To%20Cloud.png)
 ![Device Data Sync Flowchart](./diagrams/Flow%20chart%20for%20data%20sync.png)
+![Device Vitals Sync](./diagrams/Vitals%20Test%20Sequence.png)
 
 
 ##### 2. Device Registration and Provisioning Process
