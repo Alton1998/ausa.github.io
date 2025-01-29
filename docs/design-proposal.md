@@ -157,7 +157,7 @@ Here is a diagram:
 ![Device To Cloud Dataflow Sequence](./diagrams/Data%20Sequence%20of%20Device%20To%20Cloud.png)
 
 
-##### Device Registration and Provisioning Process
+##### 2. Device Registration and Provisioning Process
 
 Essentially we will leverage Azure DPS to do this. 
 
@@ -173,6 +173,9 @@ The device registration process is as follows for ausa:
 ![Device Registration Flow](./diagrams/mermaid-diagram-2025-01-28-221626.png)
 The Architecture is as follows:
 ![Device Registration Architecture](./diagrams/Azure%20Device%20Registration.png)
+##### 3. Patient Setting a Schedule 
+
+![Schedule Seq](./diagrams/Schedule%20Service%20Sequence.png)
 
 
 
