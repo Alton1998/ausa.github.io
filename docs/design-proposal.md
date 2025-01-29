@@ -180,7 +180,8 @@ The Architecture is as follows:
 ![Schedule Seq](./diagrams/Schedule%20Service%20Sequence.png)
 ![Schedule Flowchart](./diagrams/Flow%20chart%20for%20schedule%20service.png)
 
-##### 4. 
+##### 4. Triggering Device Health Check.
+![Device Health Check Code Sequence](./diagrams/Device%20Health%20Check%20Service%20Sequenence.png)
 
 
 
