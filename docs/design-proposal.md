@@ -12,6 +12,11 @@ We want to design a product with the following goals in mind
     - Blood Pressure
     - ECG
     - Temperature
+    - Blood Glucose
+    - Blood Oxygen
+    - Digital Stethoscope
+    - Otoscope for ENT, Derma and Dental.
+    - Body Weight Scale
 - Additionally, we want the device to help bridge the gap between patient and healthcare providers in the follwing form:
     - Help patients deliver the necessary information for timely diagnosis.
     - Help healthcare providers track the lifestyle routine for their patients.
@@ -22,6 +27,8 @@ The Components of the product are as follows:
 
 1. Doctor Portal
 2. Medical Device
+3. Patienta App (IOS and Android)
+4. Provider's Portal (Hospital/Clinic)-> For tracking all doctors and patients
 
 ### Doctor Portal
 #### Overview
@@ -34,7 +41,7 @@ The doctor portal should offer an array of functionalities that cater to the nee
 
 - Medical History: Store detailed records of each patient's medical history, including previous diagnoses, surgeries, medications, and allergies.
 
-- Vitals Monitoring: Continuously track patient vitals such as heart rate, blood pressure, temperature, and ECG, and integrate this data with patient profiles for easy access.
+- Vitals Monitoring: Intermittently track patient vitals such as heart rate, blood pressure, temperature, and ECG, and integrate this data with patient profiles for easy access.
 - Test Results: Store lab test results, imaging reports, and other diagnostic information that can be accessed by the healthcare provider.
 - Medications and Prescriptions: Keep track of current medications, past prescriptions, and dosages, and ensure that they are up to date.
 - Lifestyle and Routine Data: Collect information on the patient's daily routines, diet, physical activity, and other lifestyle factors that could influence health.
@@ -91,6 +98,7 @@ The medical device is at the heart of the product, designed to monitor and colle
 - Alerts to Healthcare Providers: If the device detects life-threatening conditions (such as dangerously high blood pressure or arrhythmia), it should immediately notify both the patient and the healthcare provider through the portal or via direct notifications.
 - SOS Button: The device should have an emergency button that the patient can press if they feel unwell or need immediate assistance. Pressing the button should trigger an alert to the doctor or healthcare facility, enabling faster response times.
 
+
 ##### 8. Compliance with Health Standards
 - Clinical-Grade Accuracy: The device must meet clinical-grade accuracy standards for monitoring heart rate, blood pressure, ECG, and temperature to ensure reliable data for diagnosis and treatment.
 - FDA/CE Certification: The device should be certified according to relevant health and safety regulations (e.g., FDA for U.S. markets, CE for European markets) to guarantee its reliability and safety for medical use.
@@ -102,6 +110,10 @@ The medical device is at the heart of the product, designed to monitor and colle
 ##### 10. Patient Engagement and Feedback
 - Health Trends and Insights: The device should allow patients to track trends in their health data over time, such as fluctuations in blood pressure or heart rate, to encourage self-awareness and proactive health management.
 - Health Insights via Mobile App: Through the mobile app, patients can view insights on their vitals, receive personalized tips, and track their health progress, fostering better health habits and motivating them to stay engaged with their healthcare routine.
+
+##### 11. Medication Efficacy Alert
+
+TBD
 
 ## Architecture
 
