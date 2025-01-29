@@ -155,6 +155,7 @@ Here is a diagram:
 
 ![Device To Cloud DataFlow](./diagrams/Device_TO_CLOUD_DATA_FLOW.png)
 ![Device To Cloud Dataflow Sequence](./diagrams/Data%20Sequence%20of%20Device%20To%20Cloud.png)
+![Device Data Sync Flowchart](./diagrams/Data%20Sequence%20of%20Device%20To%20Cloud.png)
 
 
 ##### 2. Device Registration and Provisioning Process
@@ -176,6 +177,8 @@ The Architecture is as follows:
 ##### 3. Patient Setting a Schedule 
 
 ![Schedule Seq](./diagrams/Schedule%20Service%20Sequence.png)
+
+##### 4. 
 
 
 
