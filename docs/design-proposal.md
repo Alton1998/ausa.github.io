@@ -177,6 +177,7 @@ The Architecture is as follows:
 ##### 3. Patient Setting a Schedule 
 
 ![Schedule Seq](./diagrams/Schedule%20Service%20Sequence.png)
+![Schedule Flowchart](./diagrams/Flow%20chart%20for%20schedule%20service.png)
 
 ##### 4. 
 
