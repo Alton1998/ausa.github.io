@@ -183,6 +183,8 @@ The Architecture is as follows:
 ##### 4. Triggering Device Health Check.
 ![Device Health Check Code Sequence](./diagrams/Device%20Health%20Check%20Service%20Sequenence.png)
 
+##### 5. Sending out Alerts.
+![Alert Sequence](./diagrams/Alert%20Sequence.png)
 
 
 
