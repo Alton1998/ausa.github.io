@@ -168,6 +168,9 @@ Refer: https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-
 https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-scale-linux-x509?view=iotedge-1.5&tabs=individual-enrollment%2Cubuntu
 ```
 
+The device registration process is as follows for ausa: 
+![img](./diagrams/mermaid-diagram-2025-01-28-221626.png)
+
 
 
 
