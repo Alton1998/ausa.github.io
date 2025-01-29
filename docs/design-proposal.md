@@ -154,6 +154,7 @@ Refer: https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview
 Here is a diagram:
 
 ![Device To Cloud DataFlow](./diagrams/Device_TO_CLOUD_DATA_FLOW.png)
+![Device To Cloud Dataflow Sequence](./diagrams/Data%20Sequence%20of%20Device%20To%20Cloud.png)
 
 
 ##### Device Registration and Provisioning Process
@@ -169,8 +170,9 @@ https://learn.microsoft.com/en-us/azure/iot-edge/how-to-provision-devices-at-sca
 ```
 
 The device registration process is as follows for ausa: 
-![img](./diagrams/mermaid-diagram-2025-01-28-221626.png)
-
+![Device Registration Flow](./diagrams/mermaid-diagram-2025-01-28-221626.png)
+The Architecture is as follows:
+![Device Registration Architecture](./diagrams/Azure%20Device%20Registration.png)
 
 
 
