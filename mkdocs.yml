@@ -4,6 +4,7 @@ site_url: https://alton1998.github.io/ausa.github.io/
 nav: 
   - Home: index.md
   - Design Proposal: design-proposal.md
+  - Installing IoT Edge: installing-iot-edge.md
 
 theme:
   name: material
