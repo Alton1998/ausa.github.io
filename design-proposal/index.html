@@ -14,9 +14,11 @@
         <link rel="prev" href="..">
       
       
+        <link rel="next" href="../installing-iot-edge/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
     
     
       
@@ -24,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.d7758b05.min.css">
       
       
 
@@ -198,6 +200,7 @@
   
   <span class="md-ellipsis">
     Home
+    
   </span>
   
 
@@ -227,6 +230,7 @@
   
   <span class="md-ellipsis">
     Design Proposal
+    
   </span>
   
 
@@ -238,6 +242,7 @@
   
   <span class="md-ellipsis">
     Design Proposal
+    
   </span>
   
 
@@ -462,6 +467,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#11-medication-efficacy-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Medication Efficacy Alert
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -658,6 +672,27 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installing-iot-edge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing IoT Edge
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -892,6 +927,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#11-medication-efficacy-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Medication Efficacy Alert
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1099,6 +1143,7 @@
                   
 
 
+
 <h1 id="design-proposal">Design Proposal</h1>
 <h2 id="product-goal">Product Goal</h2>
 <p>We want to design a product with the following goals in mind</p>
@@ -1108,6 +1153,11 @@
 <li>Blood Pressure</li>
 <li>ECG</li>
 <li>Temperature</li>
+<li>Blood Glucose</li>
+<li>Blood Oxygen</li>
+<li>Digital Stethoscope</li>
+<li>Otoscope for ENT, Derma and Dental.</li>
+<li>Body Weight Scale</li>
 </ul>
 </li>
 <li>Additionally, we want the device to help bridge the gap between patient and healthcare providers in the follwing form:<ul>
@@ -1121,6 +1171,8 @@
 <ol>
 <li>Doctor Portal</li>
 <li>Medical Device</li>
+<li>Patienta App (IOS and Android)</li>
+<li>Provider's Portal (Hospital/Clinic)-&gt; For tracking all doctors and patients</li>
 </ol>
 <h3 id="doctor-portal">Doctor Portal</h3>
 <h4 id="overview">Overview</h4>
@@ -1133,7 +1185,7 @@
 <p>Medical History: Store detailed records of each patient's medical history, including previous diagnoses, surgeries, medications, and allergies.</p>
 </li>
 <li>
-<p>Vitals Monitoring: Continuously track patient vitals such as heart rate, blood pressure, temperature, and ECG, and integrate this data with patient profiles for easy access.</p>
+<p>Vitals Monitoring: Intermittently track patient vitals such as heart rate, blood pressure, temperature, and ECG, and integrate this data with patient profiles for easy access.</p>
 </li>
 <li>Test Results: Store lab test results, imaging reports, and other diagnostic information that can be accessed by the healthcare provider.</li>
 <li>Medications and Prescriptions: Keep track of current medications, past prescriptions, and dosages, and ensure that they are up to date.</li>
@@ -1216,6 +1268,8 @@
 <li>Health Trends and Insights: The device should allow patients to track trends in their health data over time, such as fluctuations in blood pressure or heart rate, to encourage self-awareness and proactive health management.</li>
 <li>Health Insights via Mobile App: Through the mobile app, patients can view insights on their vitals, receive personalized tips, and track their health progress, fostering better health habits and motivating them to stay engaged with their healthcare routine.</li>
 </ul>
+<h5 id="11-medication-efficacy-alert">11. Medication Efficacy Alert</h5>
+<p>TBD</p>
 <h2 id="architecture">Architecture</h2>
 <h3 id="device">Device</h3>
 <p><img alt="Device Architecture" src="../diagrams/Device%20Architecture.png" /></p>
@@ -1375,10 +1429,10 @@ The Architecture is as follows:
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../assets/javascripts/bundle.f13b1293.min.js"></script>
       
     
   </body>
