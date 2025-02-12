@@ -25,3 +25,7 @@ Follow this to create three Certificates: https://learn.microsoft.com/en-us/azur
 Add the root certificate to the Certificates.
 Add the CA Certificates to the enrollment group
 Add the device full chain certificates to the device.
+
+## Developing modules
+https://learn.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-linux?tabs=python&pivots=iotedge-dev-cli
+
